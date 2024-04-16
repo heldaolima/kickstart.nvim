@@ -1,5 +1,21 @@
--- You can add your own plugins here or in other files in this directory!
---  I promise not to create any merge conflicts in this directory :)
---
--- See the kickstart.nvim README for more information
-return {}
+return {
+  {
+    'm4xshen/autoclose.nvim',
+    opts = {
+      keys = {
+        ['['] = { close = true, pair = '[]' },
+        ['"'] = { close = true, pair = '""' },
+        ['('] = { close = true, pair = '()' },
+        ['{'] = { close = true, pair = '{}' },
+        ["'"] = { close = true, pair = "''" },
+      },
+    },
+  },
+  {
+    'mattkubej/jest.nvim',
+    opts = {
+      jest_cmd = 'NODE_ENV=test node_modules/jest/bin/jest.js',
+      silent = false,
+    },
+  },
+}
