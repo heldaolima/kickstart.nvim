@@ -18,4 +18,7 @@ return {
       silent = false,
     },
   },
+  {
+    'rebelot/kanagawa.nvim',
+  },
 }
