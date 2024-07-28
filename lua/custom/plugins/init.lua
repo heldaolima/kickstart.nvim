@@ -14,11 +14,22 @@ return {
   {
     'mattkubej/jest.nvim',
     opts = {
-      jest_cmd = 'NODE_ENV=test node_modules/jest/bin/jest.js',
+      -- jest_cmd = ' node_modules/jest/bin/jest.js',
       silent = false,
     },
   },
   {
     'rebelot/kanagawa.nvim',
+  },
+  {
+    'windwp/nvim-ts-autotag',
+    opts = {},
+  },
+  {
+    'Olical/vim-scheme',
+    dependencies = {
+      'guns/vim-sexp',
+      'tpope/vim-sexp-mappings-for-regular-people',
+    },
   },
 }
