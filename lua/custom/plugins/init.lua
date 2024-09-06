@@ -21,15 +21,4 @@ return {
   {
     'rebelot/kanagawa.nvim',
   },
-  {
-    'windwp/nvim-ts-autotag',
-    opts = {},
-  },
-  {
-    'Olical/vim-scheme',
-    dependencies = {
-      'guns/vim-sexp',
-      'tpope/vim-sexp-mappings-for-regular-people',
-    },
-  },
 }
